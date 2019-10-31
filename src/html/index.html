@@ -1,0 +1,54 @@
+<!--#set var="root" value="/"-->
+<!--/client/-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>${lp(1)}</title>
+  <!--# echo var="root"-->
+  <base href="/client/">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script>
+
+  </script>
+</head>
+<body>
+  <!-- 页面加载 -->
+  <div id="loading">
+    <div>
+      <div class="k-line2 k-line12-1"></div>
+      <div class="k-line2 k-line12-2"></div>
+      <div class="k-line2 k-line12-3"></div>
+      <div class="k-line2 k-line12-4"></div>
+      <div class="k-line2 k-line12-5"></div>
+      <div class="k-line2 k-line12-6"></div>
+      <div class="k-line2 k-line12-7"></div>
+      <div class="k-line2 k-line12-8"></div>
+    </div>
+  </div>
+  <div id="header">
+    <div>
+      <span>中文(简体)</span>
+      <ul>
+        <li title="zh">中文(简体)</li>
+        <li title="en">English</li>
+      </ul>
+    </div>
+  </div>
+  <div id="main">
+    <div class="" style="display: none"><!--#include file="${root}html/home.html"--></div>
+    <div class="hide"><!--#include file="${root}html/login.html"--></div>
+    <div class="hide"><!--#include file="${root}html/details.html"--></div>
+  </div>
+  <div class=""><!--#include file="${root}html/dialog.html"--></div>
+</body>
+<script src="lib/bignumber.min.js"></script>
+<script src="lib/web3.min.js"></script>
+<script src="lib/keythereum.min.js"></script>
+<script src="lib/ethereumjs-tx.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+</script>
+</html>
